@@ -76,7 +76,7 @@ function sameEmails(mail) {
     return false;
   }
 }
-if (/(signUp\.html|\/)/.test(location.pathname)) {
+if (/signUp\.html/.test(location.pathname)) {
   document.addEventListener("input", function (e) {
     inputValidation(e.target);
     document.getElementById("errMsg").innerHTML = null;
@@ -118,7 +118,7 @@ function signInErrMsg() {
     userMail.classList.add("is-invalid");
   }
 }
-if (/index\.html/.test(location.pathname)) {
+if (/index\.html|\//.test(location.pathname)) {
   document.addEventListener("input", function (e) {
     if (e.target.value) {
       e.target.nextElementSibling.classList.remove("d-block");
