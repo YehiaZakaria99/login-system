@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="CRUD" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <section class="login-system">
+      <div class="contianer py-5">
+        <div class="box bg-warning p-5 w-75 mx-auto text-center">
+          <header class="box-header">
+            <h1>Smart Login System</h1>
+          </header>
+          <section class="box-body my-3">
+            <form action=""  class="sign-in">
+              <input type="email" class="form-control mb-3" placeholder="Enter your email" name="mail" id="userMail" required />
+              <div class="invalid-feedback" id="mailFeedBack">
+                This field is required
+              </div>
+              <input type="password" class="form-control mb-3" placeholder="Enter your password" name="pass" id="userPass" required/>
+              <div class="invalid-feedback" id="passFeedBack">
+                This field is required
+              </div>
+              <p class="msg text-danger " id="errMsg"></p>
+              <button class="btn btn-info w-25" type="submit" id="signInBtn">Login</button>
+            </form>
+          </section>
+          <footer class="box-footer">
+            <p>Don't have an account ? <a href="./signUp.html">Sign Up</a></p>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

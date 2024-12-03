@@ -1,0 +1,37 @@
+.is-valid {
+  border-color: green;
+}
+.is-invalid {
+  border-color: red;
+}
+
+
+.invalid-feedback {
+    display: none;
+    /* display: block; */
+    width: fit-content;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: .875em;
+    color: var(--bs-form-invalid-color);
+}
+
+
+.alert{
+    margin-top: -1rem;
+    display: none;
+    /* display: block; */
+}
+
+
+.log-out{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.user-name{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
