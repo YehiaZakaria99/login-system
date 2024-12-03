@@ -76,7 +76,7 @@ function sameEmails(mail) {
     return false;
   }
 }
-if (location.pathname == "/signUp.html") {
+if (/(signUp\.html|\/)/.test(location.pathname)) {
   document.addEventListener("input", function (e) {
     inputValidation(e.target);
     document.getElementById("errMsg").innerHTML = null;
@@ -118,7 +118,7 @@ function signInErrMsg() {
     userMail.classList.add("is-invalid");
   }
 }
-if (location.pathname == "/") {
+if (/index\.html/.test(location.pathname)) {
   document.addEventListener("input", function (e) {
     if (e.target.value) {
       e.target.nextElementSibling.classList.remove("d-block");
@@ -137,7 +137,7 @@ document.addEventListener("click", function (e) {
   }
 });
 // ############################################## Home Page
-if (location.pathname == "/homePage.html") {
+if (/homePage\.html/.test(location.pathname)) {
   const userName = localStorage.getItem("currentUser");
   if (userName) {
     sayWelcome.innerHTML = `Welcome <span class="text-danger"> ${userName} </span>`;
